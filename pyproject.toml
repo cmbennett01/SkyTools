@@ -9,5 +9,5 @@ name = "skytools"
 version = "0.0.1"
 dependencies = ['numpy', 'astropy',]
 
-[tool.setuptools.packages]
-find = {}
+[tool.setuptools.packages.find]
+where = ["src"]
