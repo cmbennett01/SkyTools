@@ -15,7 +15,7 @@ import numpy as np
 u2k_zones = np.array(
     [(84.5,  1), (73.5,  6), (62.0, 10), (51.0, 12), (40.0, 15),
      (29.0, 18), (17.0, 18), (5.5,  20), (0.0,  20), (0.0,   0)],
-     dtype=[('lowDec', '>f4'), ('numZones', '>i4')])
+      dtype=[('lowDec', '>f4'), ('numZones', '>i4')])
 
 
 def u2k_chart(coord_obj):

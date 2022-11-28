@@ -12,8 +12,8 @@ args = parser.parse_args()
 
 coords = args.ra + args.dec
 c = SkyCoord(coords, unit=(u.deg, u.hourangle))
-ra = c.ra.to_string(unit='hour', precision=0, format='unicode')
-dec = c.dec.to_string(unit='deg', precision=0, alwayssign=True,
+ra = c.ra.to_string(unit='hour', precision=0, format='unicode') # type: ignore
+dec = c.dec.to_string(unit='deg', precision=0, alwayssign=True, # type: ignore
                       format='unicode')
 vol, pg = u2k_chart(c)
 quad = sky_quad(c)
