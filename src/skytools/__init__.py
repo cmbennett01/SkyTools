@@ -1,4 +1,6 @@
 # __init__.py
 
-from .atlas import u2k_chart, sky_quad
+import astropy.units as u
+from astropy.coordinates import SkyCoord
 
+from .atlas import u2k_chart, sky_quad

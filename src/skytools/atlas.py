@@ -9,8 +9,7 @@ Description: Script to lookup Uranometria 2000.0 chart number for a coordinate.
 
 from math import ceil
 import numpy as np
-from astropy.coordinates import SkyCoord
-import astropy.units as u
+
 
 # Structured array for U2K bands (lower cutoff and # panels
 u2k_zones = np.array(
